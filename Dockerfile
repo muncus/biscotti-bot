@@ -29,15 +29,19 @@ RUN npm install -g coffee-script@1.8.0 hubot@2.8.3
 RUN npm -g install yo generator-hubot
 
 # Create Hubot
-RUN mkdir /app
-WORKDIR /app
-RUN hubot --create johnny5
-WORKDIR /app/johnny5
+RUN mkdir -p /app/hubot
+WORKDIR /app/hubot
+ADD hubot /app/hubot
+#RUN hubot --create johnny5
+#WORKDIR /app/johnny5
 
 # Install hubot-irc
 RUN npm install hubot-irc --save && npm install
 # Install hubot-slack
 RUN npm install hubot-slack --save && npm install
+
+# Extra hubot packages
+RUN npm install hubot-plusplus --save && npm install
 
 # Set Hubot Options
 ENV HUBOT_IRC_UNFLOOD true
