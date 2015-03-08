@@ -32,8 +32,6 @@ RUN npm -g install yo generator-hubot
 RUN mkdir -p /app/hubot
 WORKDIR /app/hubot
 ADD hubot /app/hubot
-#RUN hubot --create johnny5
-#WORKDIR /app/johnny5
 
 # Install hubot-irc
 RUN npm install hubot-irc --save && npm install
