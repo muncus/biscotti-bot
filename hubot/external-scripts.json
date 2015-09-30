@@ -10,5 +10,11 @@
   "hubot-rules",
   "hubot-shipit",
   "hubot-youtube",
-  "hubot-plusplus"
+  "hubot-plusplus",
+  "hubot-factoids",
+  "hubot-http-status",
+  "hubot-fliptable",
+  "hubot-devops-reactions",
+  "hubot-business-cat",
+  "hubot-victory"
 ]
