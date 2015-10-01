@@ -34,13 +34,11 @@ WORKDIR /app/hubot
 ADD hubot /app/hubot
 
 # Install hubot-irc
-RUN npm install hubot-irc --save && npm install
+RUN npm install hubot-irc --save
 # Install hubot-slack
-RUN npm install hubot-slack --save && npm install
-
-# Extra hubot packages
-RUN npm install hubot-plusplus --save && npm install
-
+RUN npm install hubot-slack --save
+# Extra hubot packages should be added to hubot/package.json
+RUN npm install
 # Set Hubot Options
 ENV HUBOT_IRC_UNFLOOD true
 
