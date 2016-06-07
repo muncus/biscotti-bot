@@ -6,8 +6,6 @@
   "description": "A simple helpful robot for your Company",
   "dependencies": {
      "hubot": "^2.11.2"
-    ,"hubot-business-cat" : "*"
-    ,"hubot-devops-reactions" : "*"
     ,"hubot-diagnostics": "0.0.1"
     ,"hubot-factoids" : "*"
     ,"hubot-fliptable" : "*"
